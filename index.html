@@ -2,27 +2,27 @@
 
 <body>
     <! --修改地方1-->
-    <p>未更新</p>
+    <p>已更新</p>
     <div>
         <div>
             <! --修改地方2-->
             <a
-                href='https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=https%3A%2F%2Fgraph.microsoft.com%2FFiles.ReadWrite.All+Files.Read.All+Sites.Read.All+Sites.ReadWrite.All+User.Read.All+User.ReadWrite.All+Directory.Read.All+Directory.ReadWrite.All+Mail.Read+Mail.ReadWrite+MailboxSettings.Read+MailboxSettings.ReadWrite+offline_access&response_type=code&client_id=你的应用id&redirect_uri=你的项目主页'>click
+                href='https://login.microsoftonline.com/common/oauth2/v2.0/authorize?scope=https%3A%2F%2Fgraph.microsoft.com%2FFiles.ReadWrite.All+Files.Read.All+Sites.Read.All+Sites.ReadWrite.All+User.Read.All+User.ReadWrite.All+Directory.Read.All+Directory.ReadWrite.All+Mail.Read+Mail.ReadWrite+MailboxSettings.Read+MailboxSettings.ReadWrite+offline_access&response_type=code&client_id=354df77a-ee09-446c-b36d-44b66d3998c9&redirect_uri=https://yjf2301.github.io/GetAutoApiToken/'>click
 
                 here to get your refresh code</a>
         </div>
         <div id='info'></div>
         <form action="https://login.microsoftonline.com/common/oauth2/v2.0/token" method="POST" style="display:none;">
             <! --修改地方3-->
-            <input type="text" name="client_id" placeholder="client_id" value="你的应用id" />
+            <input type="text" name="client_id" placeholder="client_id" value="354df77a-ee09-446c-b36d-44b66d3998c9" />
             <! --修改地方4-->
             <input type="text" name="client_secret" placeholder="client_secret"
-                value="你的应用机密" />
+                value="A-qk-432pXe.jFG7P3sE-eL1.Ou53RlbwR" />
             <input type="text" name="grant_type" placeholder="authorization_code" value="authorization_code" />
             <input type="text" name="requested_token_use" placeholder="on_behalf_of" value="on_behalf_of" />
             <! --修改地方5-->
             <input type="text" name="redirect_uri" placeholder="redirect_uri"
-                value="你的项目主页" />
+                value="https://yjf2301.github.io/GetAutoApiToken/" />
             <input type="text" name="code" placeholder="code" id="code" />
             <input type="submit" id='submit' />
         </form>
